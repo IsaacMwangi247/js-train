@@ -1,0 +1,63 @@
+**INTRODUCTION TO JAVASCRIPT**
+-> A web application has the following building blocks:
+1.HTML - defines the structure / content of the webpage
+2.CSS - defines the appearance of the webpage
+3.JS  - enable user interactivity
+
+**What do we use JS for?**
+1.User Interactivity - webpage responding to user actions e.g typing, clicking buttons,
+scrolling,hovering e.t.c
+2.Reactivity - making our pages dynamic -> the page content is able to change itself 
+without reloading
+
+**JS can run in two environments:
+1. In the browser -> client side JS
+2. In the server -> NodeJS
+
+
+**Where can we write JS?**
+-> depends on how much JS code you have to write
+1.Internal JS -> witing JS inside a HTML document
+        a) In the head section - if you want to run JS before HTML
+        b) In the body section - right above the closing body tag (common)
+2.External JS -( best way)
+----> for a large JS codebase
+---> create an external JS file with a .js extension
+---->link your external script to html using src attribute in script element
+
+** JS is a high level, interpreted language that makes web applications interactive
+
+1.VARIABLES
+-> Named container / memory space used to store values
+-> How to declare variables in JS
+1. Using the let keyword 
+    -> the most common way
+    -> used when you want to reassign / change the value of a variable
+    e.g let x = 5 // declaration & assignment
+        x = 12 // reassignment
+
+2. Using the const keyword
+    -> represents constant values
+    -> values here cant be changed or reassigned
+    -> e.g. const pi = 3.142
+
+3. Using the var keyword - outdated
+    -> works just like 'let'
+    -> was replaced by let
+    -> works in older browsers 
+
+**DATA TYPES**
+1.String - sequence of characters / text enclosed in quotations
+2.Number - represents numeric values - both whole (integers) and decimal
+3.Boolean - represents Truth values - true and false
+
+->How to output in JS?
+**console.log()
+
+-> Checking for data type in JS
+** typeof()
+
+
+
+
+
