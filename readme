@@ -59,5 +59,63 @@ without reloading
 
 
 
+**Comments**
+-> A way of documenting code -commented lines are ignored by the interpreter
+->Types of comments:
+1.Multiline comment -> /* */
+2.Single line comment - //
+
+**STRING METHODS & OPERATIONS**
+-Methods are inbuilt functions used to manipulate data
+
+1.Concatenation - joining or combining strings 
+            a) Using "+" operator
+            b) using concat() method
+2.Template literals - a way of embedding or including variables inside strings
+        -use backticks, $ and {}
+3.Accessing characters in a string - strings are ordered - use indexing
+        N/B:- In accessing string characters in JS , we dont have -ve indexing
+4.Determine no of characters in a string - .length
+5. .slice() - returns the portion / substring of a full string
+        .slice(start,end)
+        **slice allows -ve indexing
+6. .toUpperCase() - converts a string to uppercase format
+7. .toLowerCase() - converts a string to lowercase format
+8. .includes() - determines whether a specified character or substring is part of a string
+            -returns a Boolean value
+9. .startsWith() - checks whether a string begins with a specified character or substring
+10. .endsWith() - checks whether a string ends with a specified character or substring
+                - return Boolean values
+11. .indexOf() - returns the first occurrence of a specified character or characters
+        e.g "Hello"
+12. .replace() - replaces  specified character/s with a new value
+            .replace(old_value, new_value)
+13. .trim() - removing whitespaces from a string
+            - trimLeft() or trimStart()
+            - trimRight() or trimEnd()
+
+
+**NUMERIC OPERATIONS**
+1.addition -> +
+2.subtraction -> -
+3.division - /
+4.multiplication - *
+6.exponent - **
+7.modulus - %
+8.increment -> ++ -> increase by 1
+9. decrement -> -- -> decrease by 1
+10. .toString() - changes a number to a string
+11. .toFixed() - rounds off a number to specified decimal places
+12. Math.round() - rounds a number to the nearest integer
+13. Math.floor() - round down
+14. Math.ceil() - round up
+
+**TASK**
+1.slide 53
+2.slide 57
+ 
+
+
+
 
 
