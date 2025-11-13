@@ -22,11 +22,11 @@ console.log(c,typeof(c))
 
 //type coercion
 let value1 = "5"
-let value2 = "12"//-> "12"
+let value2 = 12//-> "12"
 console.log(value1 / value2) //512
 
-let f = "Jane"
-let g = "Doe"
+let num1 = Number(prompt("Enter num 1"))
+let num2 = Number(prompt("Enter num 2"))
 
 
 

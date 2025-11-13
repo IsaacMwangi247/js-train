@@ -191,5 +191,48 @@ without reloading
 3.review & redo any undone task on slide 57
 
 
+       **CONDITIONAL STATEMENTS**
+-> Enables us to write programs that make decisions based on inputs
+-> if-else statements 
+-> syntax:
+{} - represents blocks
 
+scenario -> you have one condition e.g. check whether number is even
+if (condition){
+    //what haappens if condition is true / met
+} else{
+   // what happens if condition is false / not met
+}
 
+scenario -> you have multiple conditions
+if , else if , else
+
+if (condition 1){
+        what happens if condition 1 is met
+} else if (condition 2){
+        what happens if condition 2 is met
+} else if (condition 3){
+        what happens if condition 3 is met
+} else{
+      what happens if all conditions are false 
+}
+                **In class task**
+1.Using an if statement write a program that checks
+ whether a number is even or odd
+
+2.Write a Javascript program that checks which number is the largest
+among 3 numbers -> take 3 user inputs and determine which number is the largest.
+
+ **ternary operator**
+-> ?
+-> shorthand for if-else statements
+-> works only when there is one condition
+-> syntax:
+   condition ? expression if condition is true : expression if condition is false
+
+   In class task
+1.Write a program using ternary operator that checks whether a person is an
+eligible voter -> criteria: an eligible voter has to be 18 years old or older
+
+**Task**
+-Slide 66
