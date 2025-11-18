@@ -348,17 +348,136 @@ in ascending order from smallest to largest
 
         **task**
         **Research on what each of the methods below do and how they're used:
-7.splice()
-8.slice()
-9.indexOf()
-10.lastIndexOf()
-11.includes()
-12.sort()
-13.reverse()
-14.join()
-15.toString()
-16.copyWithin()
-17.at()
+7.splice() - adds , removes or replaces elements depending on parameter signature
+        -> .splice(start, delete count, items to add)
+8.slice() - takes a portion of an array to create a new array
+        -> slice(start,end)
+9.indexOf() - returns the position of the first occurrence of a value in an array
+10.lastIndexOf() - returns the position of the last occurrence of a value in an array
+11.includes() - checks for the existence of a value in an array and returns boolean
+12.sort() - sorts an array alphabetically by default
+13.reverse() - reverses the order of the array elements
+14.join() - joins array elements to a string
+15.toString() - converts an array into a comma-separated string
+16.copyWithin() - extracts a portion of an array and copies that portion within the same array
+                -> copyWithin(target,start,end)
+17.at()-returns an element at a specified position 
+        -> allows -ve indexing
+
+
+
+                **OBJECTS**
+-> Objects are data structures that store data in key-value pairs
+-> Equivalent of Python 
+                **Properties of Objects**
+1.They store data in key-value pairs
+2.They use keys to access values
+3.Keys are unique 
+4.Keys have to be strings
+5.Values can be of any data type
+
+-> represented using {}
+-> properties are comma-separated
+
+let person ={
+        "name":"Alice",
+        "age":25,
+        "address":"123 Kimathi St"
+}
+
+*Properties - this is the combination of keys and values
+property = key + value
+
+Object Operations
+1.Creating an Object
+2.Accessing values in an object -> use keys
+        a)Dot notation
+        -> use dot operator (.) followed by the key
+        -> dot notation can only be used with keys that follow identifier (variables) naming rules
+        -> dot notation cant work for keys with spaces
+
+        b)Bracket notation
+        -> uses square brackets taking keys as strings ["key"]
+        -> can accept keys with spaces
+
+Object Methods
+1. .keys() - returns all keys of on object in an array
+2. .values() - returns all values of an oobject in an array
+3. .entries() - returns all key-value pairs in an array of arrays
+
+**TASK**
+1.slide 69 & 70 -> arrays
+2.slide 75 & 76 -> objects
+
+3. In the object below , output the following values:
+a) "Deploy to Netlify"
+b.)"updates"
+c.)"Lake View Road" 
+d.) "PostgreSQL"
+
+
+const userProfile = {
+  id: 101,
+  name: {
+    first: "Brian",
+    last: "Letting"
+  },
+  contact: {
+    email: "jeff@example.com",
+    phones: ["+254700000001", "+254700000002"]
+  },
+  address: {
+    current: {
+      city: "Nairobi",
+      street: "Westlands Ave",
+      postalCode: "00100"
+    },
+    previous: [
+      {
+        city: "Eldoret",
+        street: "Main Street",
+        postalCode: "30100"
+      },
+      {
+        city: "Kisumu",
+        street: "Lake View Road",
+        postalCode: "40100"
+      }
+    ]
+  },
+  preferences: {
+    theme: "dark",
+    language: "en",
+    notifications: {
+      email: true,
+      sms: false,
+      push: ["promotions", "updates"]
+    }
+  },
+  projects: [
+    {
+      id: 1,
+      name: "POS System",
+      technologies: ["React", "FastAPI", "PostgreSQL"],
+      tasks: [
+        { title: "Set up DB", done: true },
+        { title: "Design UI", done: false }
+      ]
+    },
+    {
+      id: 2,
+      name: "Portfolio Website",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      tasks: [
+        { title: "Create About Page", done: true },
+        { title: "Deploy to Netlify", done: false }
+      ]
+    }
+  ]
+};
+
+
+
 
 
 
