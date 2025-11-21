@@ -538,7 +538,7 @@ const userProfile = {
         - will keep executing as long as the condition is true 
 
 for loop syntax:
-for(initialization;condition;update){
+for(initialization; condition; update){
         //block of code executing repeatedly
 }
 *initialization - defines the starting point of your loop
@@ -551,8 +551,53 @@ for(initialization;condition;update){
 4.Loop backwards using --
 
 
-
 **Task**
 1.Read on nested loops && break in JS - research
 2.Use while loop to sum numbers from 1 to 10
 3.Task on slide 79 
+
+**Nested Loops**
+-A loop within another loop
+-For every single iteration of the outer loop , the inner loop executes to completion
+
+**Break**
+-A keyword used to stop the loop immediately
+-breaks out of a loop stopping the repititive process
+
+**Functions**
+-> A block of reusable code that performs a specific task
+**Why use Functions?**
+1.Reusability of code
+2.Modularity - breaking a large codebase into smaller manageable chunks
+3.Code Organization & Readability
+
+**syntax of functions in JS
+
+function function_name(){
+       //block of code to be executed - function body
+}
+
+function_name() -> function call
+
+**parts of a function**
+1.function definition - function keyword + function_name + parameters(optional)
+2.function body- block of code to be executed by the function
+3.function call- calling  function by its naame to execute code in the function body
+
+
+**conventinally functions work with the return keyword
+--> return - gives a value back and signifies the end of a function
+
+**Variable Scopes**
+-> Defines where a variable is accessible in a program
+-> 1.Global scope /global variables - accessible anywhere in the program
+-> 2.Local scope / Block scope / Local variables - accessible only within their defined blocks 
+
+**Parameters && Arguments**
+->Parameter -- placeholder variable passed in the function definition as a placeholder 
+                to real values
+->Argument -- the real values passed in place of placeholders when calling a function
+
+
+**TASK**
+1.Slide 80 - questions 1 to 20 provided in the link 

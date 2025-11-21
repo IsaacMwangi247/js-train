@@ -37,5 +37,30 @@ while(num <= 10){
     num++
 }
 
+for(i=1; i<=10; i++){
+    console.log(i)
+}
+
+for(i=10 ;i>0; i--){
+    console.log(i)
+}
+
+let names = ["Bob","James","Jack"]
+
+for(i=0;i<names.length;i++){
+    console.log(names[i])
+}
 
 
+//nested loop
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        console.log(i,j)
+    }
+}
+
+//break
+for(i=1;i<=20;i++){
+    if(i==8) break
+    console.log(i)
+}
