@@ -26,7 +26,6 @@ console.log(sum1)
 console.log(sum2)
 
 //write a program that takes user input of a random number and checks whether or not its even using functions
-
 let number = Number(prompt("Enter number"))
 function check_even(num){
     if(num%2==0){
