@@ -64,25 +64,36 @@ let birth_date = prompt("Enter birth date in the format: YYYY-MM-DD")
 //"1990-05-20"
 
 let date_parts = birth_date.split('-') //['1990','05','20'] ---  ['2025','11','10']
-                                            // 10-20 = -10
+                                            // 10-20 = -10 -> 35y 5m 21days
+                                            // 35y 6m -10 + 31d (21)
 
 let birth_year = Number(date_parts[0])
 let birth_month = Number(date_parts[1])
 let birth_day = Number(date_parts[2])
 
 let todayYear = 2025 
-let todayMonth = 12
-let todayDay = 24
- // 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 -sept
- // 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 -oct
- // 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 -nov
+let todayMonth = 11
+let todayDay = 10
 
-let monthDays = [31,28,31,30,31,30,31,31,30,31,30,31] 
+let monthDays = [31,28,31,30,31,30,31,31,30,31,30,31]// 0 -1 = -1
 
-if(birth_date > todayDay){
-    todayMonth-- // 12-1 = 11
-    todayDay += monthDays[(todayMonth-1 + 12) % 12]// (11 -1 + 12)%12 = 22% 12 = 10
+
+if(birth_date >= todayDay){
+    todayMonth--  //11 - 1 = 10
+    todayDay += monthDays[(todayMonth-1 + 12) % 12]//10 - 1 + 12 = 21%12 = 9
 }
 
+let calculated_days = todayDay - birth_day 
+let calculated_month
+let calculated_years
+
+if(birth_month > todayMonth){
+    calculated_month = 12 - (birth_month - todayMonth) 
+    calculated_years = todayYear - birth_year - 1
+}else{
+    calculated_month = todayMonth - birth_month
+    calculated_years = todayYear - birth_year
+}
+console.log(`${calculated_years} years, ${calculated_month} months, ${calculated_days} days`)
 
 

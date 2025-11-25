@@ -59,8 +59,11 @@ for(i=1;i<=5;i++){
     }
 }
 
+
 //break
 for(i=1;i<=20;i++){
     if(i==8) break
     console.log(i)
 }
+
+

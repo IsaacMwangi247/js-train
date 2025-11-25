@@ -37,3 +37,25 @@ let city = {
 }
 console.log(city["sub-counties"]?.["sub-3"]?.towns[1])
 //objects.js:38 Uncaught TypeError: Cannot read properties of undefined (reading 'sub-3')
+
+
+let town = {
+    "name":"Nairobi",
+    "code":"00100",
+    "pop":2000000,
+    "wards":{
+        "w1":"Westlands",
+        "w2":"Dagoretti"
+    }
+}
+console.log(town.population) //undefined
+console.log(town?.ward?.w1 ?? "Wrong key,please check keys") //undefined
+//
+
+// let x
+// let y = x ?? "x not assigned a value"
+// console.log(y) //undefined
+
+// let a = null
+// let b = a ?? "a is empty"
+// console.log(b)//null
